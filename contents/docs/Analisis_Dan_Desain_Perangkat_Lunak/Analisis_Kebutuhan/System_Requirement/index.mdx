@@ -3,44 +3,55 @@ title: Introduction
 description: This section provides an overview of Introduction.
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam
+# System Requirements
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+### Kebutuhan Perangkat Keras (Hardware)
+#### Server:
+- CPU: Minimal 2 core dengan kecepatan 2.0 GHz atau lebih tinggi.
+- RAM: Minimal 4 GB (lebih disarankan 8 GB untuk skalabilitas).
+- Penyimpanan: SSD dengan kapasitas minimal 100 GB, dapat diperluas sesuai kebutuhan.
 
-| Syntax        | Description |   Test Text |
-| :------------ | :---------: | ----------: |
-| Header        |    Title    | Here's this |
-| Paragraph     |    Text     |    And more |
-| Strikethrough |             |    ~~Text~~ |
+#### Pengguna (Client):
+- Desktop: Komputer dengan RAM minimal 4 GB dan browser terbaru (Chrome, Firefox, Safari).
+- Mobile: Smartphone dengan OS terbaru (Android 8.0 / iOS 12 ke atas) dan koneksi internet stabil.
 
-<CardGrid>
-  <Card
-    title="Page Structure"
-    href="/docs/deep/deeper"
-    icon="alignJustify"
-    variant="small"
-    description="test description"
-  />
-  <Card
-    title="Page Structure"
-    href="/docs/deep/deeper"
-    icon="alignJustify"
-    variant="small"
-  />
-  <Card
-    title="Rubix Studios"
-    href="https://www.rubixstudios.com.au"
-    icon="alignJustify"
-    external={true}
-    variant="small"
-  />
-  <Card
-    title="Rubix Studios"
-    href="https://www.rubixstudios.com.au"
-    image="/images/og-image.png"
-    external={true}
-    variant="image"
-  />
-</CardGrid>
+### Kebutuhan Perangkat Lunak (Software)
+#### Sistem Operasi Server:
+- Linux (Ubuntu, CentOS, atau Debian) atau Windows Server.
+- Web server: Apache atau Nginx.
+- Database: MySQL atau PostgreSQL.
+- PHP 7.4 atau lebih tinggi (jika menggunakan Laravel/CodeIgniter).
+- Node.js (jika menggunakan ReactJS/VueJS untuk frontend).
+
+#### Tools Pengembangan:
+- Visual Studio Code atau editor lain yang sesuai.
+- Git untuk version control.
+- Docker (opsional, untuk deployment yang lebih mudah).
+
+### Kebutuhan Jaringan dan Keamanan
+#### Jaringan:
+- Koneksi internet stabil dengan kecepatan minimal 10 Mbps untuk server dan pengguna.
+- Load Balancer untuk memastikan aplikasi tetap tersedia saat trafik tinggi.
+
+#### Keamanan:
+- SSL (HTTPS) untuk mengamankan komunikasi data.
+- Firewall untuk melindungi server dari ancaman eksternal.
+- Penggunaan token atau session untuk otentikasi pengguna.
+- Backup otomatis untuk data dan sistem setiap 24 jam.
+
+### Kebutuhan Skalabilitas dan Pemeliharaan
+#### Skalabilitas:
+- Sistem harus dapat menangani peningkatan jumlah pengguna dan transaksi tanpa penurunan kinerja.
+- Penggunaan cloud hosting (AWS, Google Cloud, DigitalOcean) untuk mendukung skalabilitas.
+
+#### Pemeliharaan:
+- Pembaruan rutin untuk sistem dan aplikasi untuk memastikan keamanan dan performa.
+- Monitoring sistem untuk mendeteksi gangguan atau downtime secara proaktif.
+
+### Kebutuhan Integrasi dan API
+#### Integrasi Pembayaran:
+- API untuk integrasi dengan layanan pembayaran seperti Midtrans atau Doku.
+- API untuk pengiriman barang (misalnya integrasi dengan kurir atau layanan logistik).
+
+#### Integrasi Eksternal:
+- API untuk fitur notifikasi via email atau SMS untuk pembeli dan penjual.
