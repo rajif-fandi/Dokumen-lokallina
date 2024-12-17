@@ -32,20 +32,6 @@ export const Documents: Paths[] = [
     title: "Pendahuluan",
     href: "/Pendahuluan",
     items: [
-      {
-        title: "Deskripsi Proyek",
-        href: "/Deskripsi_Proyek",
-        items : [
-          {
-            title: "Teknologi yang Digunakan",
-            href: "/Teknologi_yang_Digunakan",
-          },
-          {
-            title: "Keterkaitan dengan Mata Kuliah",
-            href: "/Keterkaitan_dengan_Mata_Kuliah",
-          },
-        ]
-      },
     ],
   },
   {
@@ -124,10 +110,6 @@ export const Documents: Paths[] = [
         title: "Implementasi Desain",
         href: "/Implementasi_Desain",
         items : [
-          {
-            title: "Kode_Antarmuka Pengguna",
-            href: "/Kode_Antarmuka_Pengguna",
-          },
         ]
       },
     ],
@@ -137,13 +119,30 @@ export const Documents: Paths[] = [
     href: "/Pengembangan_Aplikasi",
     items: [
       {
-        title: "Deeper",
-        href: "/deeper",
+        title: "Fitur Utama",
+        href: "/Fitur_Utama",
+        items : [
+         
+        ]
+      },
+      {
+        title: "Struktur Basis Data",
+        href: "/Struktur_Basis_Data",
         items : [
           {
-            title: "Even deeper",
-            href: "/even-deeper",
+            title: "MySQL",
+            href: "/MySQL",
           },
+          {
+            title: "NoSQL",
+            href: "/NoSQL",
+          },
+        ]
+      },
+      {
+        title: "Metode SDLC",
+        href: "/Metode_SDLC",
+        items : [
         ]
       },
     ],
@@ -152,48 +151,18 @@ export const Documents: Paths[] = [
     title: "Dokumentasi Penggunaan Website",
     href: "/Dokumentasi_Penggunaan_Website",
     items: [
-      {
-        title: "Deeper",
-        href: "/deeper",
-        items : [
-          {
-            title: "Even deeper",
-            href: "/even-deeper",
-          },
-        ]
-      },
     ],
   },
   {
     title: "Metode Pengembangan Perangkat Lunak",
     href: "/Metode_Pengembangan_Perangkat_Lunak",
     items: [
-      {
-        title: "Deeper",
-        href: "/deeper",
-        items : [
-          {
-            title: "Even deeper",
-            href: "/even-deeper",
-          },
-        ]
-      },
     ],
   },
   {
     title: "Kesimpulan dan saran",
     href: "/Kesimpulan_dan_saran",
     items: [
-      {
-        title: "Deeper",
-        href: "/deeper",
-        items : [
-          {
-            title: "Even deeper",
-            href: "/even-deeper",
-          },
-        ]
-      },
     ],
   },
  
