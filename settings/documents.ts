@@ -29,8 +29,8 @@ export const Documents: Paths[] = [
     heading: "Documents",
   },
   {
-    title: "Structure",
-    href: "/structure",
+    title: "Pendahuluan",
+    href: "/Pendahuluan",
     items: [
       {
         title: "Deeper",
@@ -44,6 +44,103 @@ export const Documents: Paths[] = [
       },
     ],
   },
+  {
+    title: "Analisis Dan Desain Perangkat Lunak",
+    href: "/Analisis Dan Desain Perangkat Lunak",
+    items: [
+      {
+        title: "Deeper",
+        href: "/deeper",
+        items : [
+          {
+            title: "Even deeper",
+            href: "/even-deeper",
+          },
+        ]
+      },
+    ],
+  },
+  {
+    title: "Perancangan Desain Antarmuka",
+    href: "/Perancangan Desain Antarmuka",
+    items: [
+      {
+        title: "Deeper",
+        href: "/deeper",
+        items : [
+          {
+            title: "Even deeper",
+            href: "/even-deeper",
+          },
+        ]
+      },
+    ],
+  },
+  {
+    title: "Pengembangan Aplikasi",
+    href: "/Pengembangan Aplikasi",
+    items: [
+      {
+        title: "Deeper",
+        href: "/deeper",
+        items : [
+          {
+            title: "Even deeper",
+            href: "/even-deeper",
+          },
+        ]
+      },
+    ],
+  },
+  {
+    title: "Dokumentasi Penggunaan Website",
+    href: "/Dokumentasi Penggunaan Website",
+    items: [
+      {
+        title: "Deeper",
+        href: "/deeper",
+        items : [
+          {
+            title: "Even deeper",
+            href: "/even-deeper",
+          },
+        ]
+      },
+    ],
+  },
+  {
+    title: "Metode Pengembangan Perangkat Lunak",
+    href: "/Metode Pengembangan Perangkat Lunak",
+    items: [
+      {
+        title: "Deeper",
+        href: "/deeper",
+        items : [
+          {
+            title: "Even deeper",
+            href: "/even-deeper",
+          },
+        ]
+      },
+    ],
+  },
+  {
+    title: "Kesimpulan dan saran",
+    href: "/Kesimpulan dan saran",
+    items: [
+      {
+        title: "Deeper",
+        href: "/deeper",
+        items : [
+          {
+            title: "Even deeper",
+            href: "/even-deeper",
+          },
+        ]
+      },
+    ],
+  },
+ 
   {
     spacer: true,
   },
