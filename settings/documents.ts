@@ -53,12 +53,42 @@ export const Documents: Paths[] = [
     href: "/Analisis_Dan_Desain_Perangkat_Lunak",
     items: [
       {
-        title: "Deeper",
-        href: "/deeper",
+        title: "Analisis Kebutuhan",
+        href: "/Analisis_Kebutuhan",
         items : [
           {
-            title: "Even deeper",
-            href: "/even-deeper",
+            title: "Business_Requirement",
+            href: "/Business_Requirement",
+          },
+          {
+            title: "Stakeholder Requirement",
+            href: "/Stakeholder_Requirement",
+          },
+          {
+            title: "System Requirement",
+            href: "/System_Requirement",
+          },
+          {
+            title: "Software Requirement",
+            href: "/Software_Requirement",
+          },
+        ]
+      },
+      {
+        title: "Diagram",
+        href: "/Diagram",
+        items : [
+          {
+            title: "Use Case Diagram",
+            href: "/Use_Case_Diagram",
+          },
+          {
+            title: "Class Diagram",
+            href: "/Class_Diagram",
+          },
+          {
+            title: "Flowchart",
+            href: "/Flowchart",
           },
         ]
       },
@@ -69,12 +99,34 @@ export const Documents: Paths[] = [
     href: "/Perancangan_Desain_Antarmuka",
     items: [
       {
-        title: "Deeper",
-        href: "/deeper",
+        title: "Dokumen Desain",
+        href: "/Dokumen_Desain",
         items : [
           {
-            title: "Even deeper",
-            href: "/even-deeper",
+            title: "Sketsa Awal",
+            href: "/Sketsa_Awal",
+          },
+          {
+            title: "Wireframe",
+            href: "/Wireframe",
+          },
+          {
+            title: "Userflow",
+            href: "/Userflow",
+          },
+          {
+            title: "Prototipe",
+            href: "/Prototipe",
+          },
+        ]
+      },
+      {
+        title: "Implementasi Desain",
+        href: "/Implementasi_Desain",
+        items : [
+          {
+            title: "Kode_Antarmuka Pengguna",
+            href: "/Kode_Antarmuka_Pengguna",
           },
         ]
       },
