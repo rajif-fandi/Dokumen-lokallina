@@ -3,44 +3,72 @@ title: Introduction
 description: This section provides an overview of Introduction.
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam
+## Software Requirements
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+### Sistem Operasi
+#### Server: Linux (Ubuntu, CentOS) atau Windows Server
+- Kegunaan: Menyediakan platform untuk menjalankan aplikasi web dan database.
+#### Client: Windows 10, macOS 10.14+, Android 8.0+, iOS 12+
+- Kegunaan: Sistem operasi yang digunakan oleh pengguna untuk mengakses aplikasi e-commerce.
 
-| Syntax        | Description |   Test Text |
-| :------------ | :---------: | ----------: |
-| Header        |    Title    | Here's this |
-| Paragraph     |    Text     |    And more |
-| Strikethrough |             |    ~~Text~~ |
+### Web Server
+#### Apache atau Nginx
+- Kegunaan: Mengelola permintaan HTTP dan mengarahkan ke aplikasi backend untuk menghasilkan halaman web.
 
-<CardGrid>
-  <Card
-    title="Page Structure"
-    href="/docs/deep/deeper"
-    icon="alignJustify"
-    variant="small"
-    description="test description"
-  />
-  <Card
-    title="Page Structure"
-    href="/docs/deep/deeper"
-    icon="alignJustify"
-    variant="small"
-  />
-  <Card
-    title="Rubix Studios"
-    href="https://www.rubixstudios.com.au"
-    icon="alignJustify"
-    external={true}
-    variant="small"
-  />
-  <Card
-    title="Rubix Studios"
-    href="https://www.rubixstudios.com.au"
-    image="/images/og-image.png"
-    external={true}
-    variant="image"
-  />
-</CardGrid>
+### Database
+#### MySQL 8 atau PostgreSQL 12
+- Kegunaan: Menyimpan data produk, pengguna, dan transaksi dengan efisien. PostgreSQL lebih cocok untuk aplikasi besar, sementara MySQL lebih cepat untuk aplikasi kecil hingga menengah.
+
+### Backend Framework
+#### Laravel (PHP) atau Node.js (Express.js)
+- Kegunaan: Framework untuk membangun logika server-side dan API yang dapat menangani permintaan dari frontend.
+
+### Frontend Framework
+#### ReactJS atau VueJS
+- Kegunaan: Digunakan untuk membangun antarmuka pengguna (UI) yang interaktif dan responsif.
+
+### Framework CSS
+#### Bootstrap 5 atau Tailwind CSS
+- Kegunaan: Menyediakan desain dan komponen UI yang responsif dan mudah digunakan untuk mempercepat pengembangan antarmuka.
+
+### Tools Pengembangan
+#### Visual Studio Code atau PhpStorm
+- Kegunaan: Alat untuk menulis, mengedit, dan mengelola kode aplikasi.
+#### Git
+- Kegunaan: Untuk version control, memungkinkan pengelolaan perubahan kode dan kolaborasi tim.
+
+### Sistem Pembayaran
+#### Midtrans atau Doku
+- Kegunaan: Sistem pembayaran yang menghubungkan aplikasi dengan berbagai metode pembayaran seperti kartu kredit, transfer bank, dan e-wallet.
+
+### API Pengiriman
+#### JNE, TIKI, atau POS Indonesia
+- Kegunaan: Untuk integrasi pengiriman barang dan pelacakan status pengiriman produk.
+
+### Cloud Hosting
+#### AWS atau DigitalOcean
+- Kegunaan: Menyediakan infrastruktur cloud untuk hosting aplikasi dan penyimpanan data yang scalable.
+
+### Keamanan
+#### SSL/TLS (HTTPS)
+- Kegunaan: Menjamin keamanan komunikasi data antara pengguna dan server aplikasi.
+#### JWT (JSON Web Tokens)
+- Kegunaan: Untuk otentikasi dan otorisasi pengguna, memastikan akses yang aman ke aplikasi.
+
+### Monitoring dan Logging
+#### Google Analytics
+- Kegunaan: Untuk melacak perilaku pengguna di aplikasi dan menganalisis kinerja website.
+#### Sentry
+- Kegunaan: Untuk memantau dan menangani error atau bug yang terjadi di aplikasi secara real-time.
+
+### Backup
+#### Backup otomatis (Rsync, MySQL Dump, AWS RDS Snapshot)
+- Kegunaan: Untuk melindungi data dengan cara membuat salinan cadangan yang bisa dipulihkan saat terjadi kerusakan atau kehilangan data.
+
+### Pengujian
+#### JUnit/PHPUnit
+- Kegunaan: Untuk menguji fungsionalitas backend dan memastikan bahwa semua bagian aplikasi berjalan dengan baik.
+#### Jest/Mocha
+- Kegunaan: Untuk menguji fungsionalitas frontend dan memastikan aplikasi bekerja dengan baik di sisi pengguna.
+#### Selenium/Cypress
+- Kegunaan: Untuk pengujian end-to-end (E2E) yang memeriksa alur aplikasi secara keseluruhan, termasuk antarmuka pengguna.
