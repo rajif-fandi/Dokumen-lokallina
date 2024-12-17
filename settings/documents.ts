@@ -33,12 +33,16 @@ export const Documents: Paths[] = [
     href: "/Pendahuluan",
     items: [
       {
-        title: "Deeper",
-        href: "/deeper",
+        title: "Deskripsi Proyek",
+        href: "/Deskripsi_Proyek",
         items : [
           {
-            title: "Even deeper",
-            href: "/even-deeper",
+            title: "Teknologi yang Digunakan",
+            href: "/Teknologi_yang_Digunakan",
+          },
+          {
+            title: "Keterkaitan dengan Mata Kuliah",
+            href: "/Keterkaitan_dengan_Mata_Kuliah",
           },
         ]
       },
