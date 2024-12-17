@@ -46,7 +46,7 @@ export const Documents: Paths[] = [
   },
   {
     title: "Analisis Dan Desain Perangkat Lunak",
-    href: "/Analisis Dan Desain Perangkat Lunak",
+    href: "/Analisis_Dan_Desain_Perangkat_Lunak",
     items: [
       {
         title: "Deeper",
@@ -62,7 +62,7 @@ export const Documents: Paths[] = [
   },
   {
     title: "Perancangan Desain Antarmuka",
-    href: "/Perancangan Desain Antarmuka",
+    href: "/Perancangan_Desain_Antarmuka",
     items: [
       {
         title: "Deeper",
@@ -78,7 +78,7 @@ export const Documents: Paths[] = [
   },
   {
     title: "Pengembangan Aplikasi",
-    href: "/Pengembangan Aplikasi",
+    href: "/Pengembangan_Aplikasi",
     items: [
       {
         title: "Deeper",
@@ -94,7 +94,7 @@ export const Documents: Paths[] = [
   },
   {
     title: "Dokumentasi Penggunaan Website",
-    href: "/Dokumentasi Penggunaan Website",
+    href: "/Dokumentasi_Penggunaan_Website",
     items: [
       {
         title: "Deeper",
@@ -110,7 +110,7 @@ export const Documents: Paths[] = [
   },
   {
     title: "Metode Pengembangan Perangkat Lunak",
-    href: "/Metode Pengembangan Perangkat Lunak",
+    href: "/Metode_Pengembangan_Perangkat_Lunak",
     items: [
       {
         title: "Deeper",
@@ -126,7 +126,7 @@ export const Documents: Paths[] = [
   },
   {
     title: "Kesimpulan dan saran",
-    href: "/Kesimpulan dan saran",
+    href: "/Kesimpulan_dan_saran",
     items: [
       {
         title: "Deeper",
