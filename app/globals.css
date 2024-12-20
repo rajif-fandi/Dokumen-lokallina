@@ -263,3 +263,8 @@ span.katex-html {
     height: 0;
   }
 }
+.full-width-img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
