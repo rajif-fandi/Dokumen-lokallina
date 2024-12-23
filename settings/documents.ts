@@ -86,10 +86,6 @@ export const Documents: Paths[] = [
             href: "/Wireframe",
           },
           {
-            title: "Userflow",
-            href: "/Userflow",
-          },
-          {
             title: "Prototipe",
             href: "/Prototipe",
           },
