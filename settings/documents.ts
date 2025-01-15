@@ -118,16 +118,16 @@ export const Documents: Paths[] = [
             title: "MySQL",
             href: "/MySQL",
           },
-          {
-            title: "NoSQL",
-            href: "/NoSQL",
-          },
         ]
       },
       {
         title: "Metode SDLC",
         href: "/Metode_SDLC",
         items : [
+          {
+            title: "SCRUM",
+            href: "/SCRUM",
+          },
         ]
       },
     ],
