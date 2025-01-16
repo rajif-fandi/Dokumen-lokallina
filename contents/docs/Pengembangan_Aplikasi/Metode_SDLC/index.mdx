@@ -1,3 +1,55 @@
----
-title: Metode SDLC
----
+# Metodologi SDLC untuk Aplikasi UMKM Market
+
+## 1. Perencanaan dan Pengumpulan Kebutuhan
+   **Tujuan**: Memahami tujuan aplikasi yang bertujuan untuk memberdayakan UMKM dengan menyediakan marketplace online untuk produk mereka. Aplikasi ini bertujuan untuk menciptakan platform yang memudahkan UMKM menjual produk secara online tanpa perlu modal besar.
+   **Pemangku Kepentingan**: Pemilik UMKM, pelanggan akhir, manajer proyek, tim pengembang.
+   **Kebutuhan**:
+   - Marketplace untuk menampilkan produk.
+   - Sistem pembayaran terintegrasi.
+   - Dashboard analitik penjualan.
+   - Fitur untuk promosi dan pemasaran produk.
+   - Manajemen produk (tambah, edit, hapus).
+   - Integrasi pengiriman barang.
+
+## 2. Studi Kelayakan
+   **Kelayakan Teknis**: Aplikasi menggunakan teknologi web populer seperti PHP untuk scripting sisi server, MySQL untuk database, serta HTML/CSS/JavaScript untuk frontend. Arsitektur aplikasi mendukung skalabilitas dengan menggunakan Node.js dan Laravel untuk layanan backend.
+   **Kelayakan Operasional**: Desain aplikasi memastikan bahwa pengguna dengan pengetahuan teknologi dasar dapat berinteraksi dengan aplikasi. Ini sangat penting untuk pemilik UMKM yang mungkin tidak terbiasa dengan sistem yang kompleks.
+   **Kelayakan Ekonomi**: Aplikasi akan menghasilkan pendapatan melalui komisi penjualan, layanan premium, dan iklan.
+
+## 3. Desain Sistem
+   **Desain Tingkat Tinggi**: Arsitektur sistem meliputi:
+   - **Frontend**: React Native/Flutter untuk mendukung aplikasi di platform Android dan iOS.
+   - **Backend**: Node.js dan Laravel untuk mengelola logika bisnis, data pengguna, dan integrasi pembayaran.
+   - **Database**: MySQL untuk menyimpan data produk, pesanan, dan pembayaran.
+   - **Keamanan**: Implementasi enkripsi dan autentikasi dua faktor untuk transaksi yang aman.
+   **Desain Rinci**:
+   - **User Interface (UI)**: Desain antarmuka yang mudah digunakan dengan navigasi yang jelas untuk mengelola produk, pesanan, dan pembayaran.
+   - **Skema Database**: Struktur tabel untuk pengguna, produk, pesanan, pembayaran, dll. (Tabel telah dijelaskan sebelumnya dalam format Markdown).
+
+## 4. Implementasi
+   **Pengembangan Frontend**:
+   - Membangun halaman responsif untuk listing produk, registrasi, manajemen produk, dan checkout.
+   - **File PHP yang Diimplementasikan**:
+     - `register.php`, `login.php` (untuk autentikasi pengguna).
+     - `product.php`, `tambah_produk.php` (untuk manajemen produk).
+     - `order_success.php`, `payment.php`, `checkout.php` (untuk menangani pembayaran dan pesanan).
+   **Pengembangan Backend**:
+   - Mengimplementasikan logika bisnis seperti pendaftaran pesanan, registrasi pengguna, penambahan/edit produk, dll.
+   - **File PHP yang Diimplementasikan**:
+     - `function.php` (berisi logika bisnis inti).
+     - `koneksi.php` (menangani koneksi database).
+     - `process_payment.php` (menangani pemrosesan pembayaran).
+
+## 5. Pengujian
+   **Pengujian Unit**: Menguji modul individual seperti registrasi pengguna, manajemen produk, dan fungsionalitas checkout.
+   **Pengujian Integrasi**: Memastikan bahwa modul-modul seperti pembayaran, autentikasi pengguna, dan manajemen pesanan dapat bekerja bersama dengan lancar.
+   **Pengujian Sistem**: Menguji aplikasi secara keseluruhan, fokus pada keamanan sistem (enkripsi data, autentikasi pengguna) dan penanganan beban.
+   **Pengujian Penerimaan Pengguna (UAT)**: Melibatkan beberapa pemilik bisnis UMKM untuk memastikan aplikasi memenuhi kebutuhan mereka sebelum diluncurkan secara resmi.
+
+## 6. Deployment (Penerapan)
+   **Penerapan Awal**: Menerapkan aplikasi pada server staging untuk pengujian internal.
+   **Penerapan Akhir**: Setelah pengujian selesai, aplikasi diterapkan ke server produksi dan siap digunakan oleh UMKM untuk mendaftar dan mulai menampilkan produk mereka.
+
+## 7. Pemeliharaan dan Pembaruan
+   **Dukungan Pasca-Penerapan**: Memantau kinerja aplikasi, memperbaiki bug, dan menangani umpan balik pengguna. Pemeliharaan rutin diperlukan untuk memastikan kelancaran fungsionalitas dan keamanan aplikasi.
+   **Pembaruan di Masa Depan**: Menambah fitur seperti integrasi lebih banyak gateway pembayaran, meningkatkan analitik, dan menskalakan aplikasi untuk lebih banyak pengguna.
