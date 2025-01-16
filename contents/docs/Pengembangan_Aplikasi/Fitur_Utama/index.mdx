@@ -1,95 +1,69 @@
+# Pengembangan Aplikasi UMKM Market
+
+## Fitur Utama Aplikasi
+
+### 1. Operasi CRUD untuk Entitas Utama
+
+Aplikasi UMKM Market memiliki fitur **CRUD** (Create, Read, Update, Delete) untuk mengelola entitas utama dalam sistem. Beberapa entitas utama yang menggunakan operasi CRUD adalah:
+
+#### 1.1 Produk
+- **Create**: Pemilik UMKM dapat menambahkan produk baru ke dalam sistem melalui halaman **Tambah Produk**.
+- **Read**: Pelanggan dapat melihat daftar produk yang tersedia di marketplace dan detail produk yang dipilih.
+- **Update**: Pemilik UMKM dapat mengedit informasi produk (seperti nama, deskripsi, harga, atau gambar) di halaman **Edit Produk**.
+- **Delete**: Pemilik UMKM dapat menghapus produk yang sudah tidak ingin dijual lagi melalui halaman **Manajemen Produk**.
+
+#### 1.2 Pengguna
+- **Create**: Pengguna baru (baik pemilik UMKM atau pelanggan) dapat mendaftar melalui halaman **Registrasi**.
+- **Read**: Pengguna dapat melihat informasi akun mereka dan status pesanan di halaman **Profil**.
+- **Update**: Pengguna dapat memperbarui informasi akun mereka seperti foto profil dan password.
+- **Delete**: Pengguna dapat menghapus akun mereka jika sudah tidak menggunakan aplikasi.
+
+#### 1.3 Pesanan
+- **Create**: Pelanggan dapat membuat pesanan baru setelah memilih produk dan mengonfirmasi pembelian.
+- **Read**: Pemilik UMKM dapat melihat status pesanan yang sedang berjalan di **Dashboard** mereka.
+- **Update**: Pemilik UMKM dapat memperbarui status pesanan, seperti status pengiriman atau pembayaran.
+- **Delete**: Pemilik UMKM atau pelanggan dapat membatalkan pesanan jika diperlukan (misalnya karena stok habis atau kesalahan pemesanan).
+
+### 2. Fitur Login dan Registrasi dengan Autentikasi Sederhana
+
+Aplikasi UMKM Market menyediakan fitur **login dan registrasi** dengan autentikasi sederhana untuk pengguna, baik pemilik UMKM maupun pelanggan.
+
+#### 2.1 Registrasi Pengguna
+- Pengguna dapat melakukan registrasi dengan mengisi **email**, **password**, dan **nama lengkap**.
+- Setelah data dimasukkan, pengguna dapat menekan tombol **Daftar** untuk membuat akun.
+- Sistem akan mengirimkan email konfirmasi untuk memastikan alamat email yang valid.
+
+#### 2.2 Login Pengguna
+- Pengguna yang sudah terdaftar dapat melakukan login dengan memasukkan **email** dan **password** yang telah didaftarkan.
+- Pengguna dapat menggunakan tombol **Lupa Password** untuk mengatur ulang password jika lupa.
+
+#### 2.3 Autentikasi Sederhana
+- Aplikasi ini menggunakan autentikasi berbasis sesi (session-based authentication), di mana pengguna akan diberikan **token sesi** saat login dan sesi tersebut berlaku hingga pengguna logout.
+- Keamanan password dilakukan dengan menggunakan metode **hashing** untuk mencegah penyimpanan data sensitif dalam bentuk teks terbaca.
+
+### 3. Minimal Satu Fitur Interaktif
+
+Untuk meningkatkan pengalaman pengguna, aplikasi **UMKM Market** memiliki fitur interaktif yang memungkinkan interaksi langsung antara pemilik UMKM dan pelanggan.
+
+#### 3.1 Fitur Ulasan dan Penilaian Produk
+- Pelanggan dapat memberikan **rating** (bintang) dan **ulasan** untuk setiap produk yang mereka beli.
+- Ulasan ini akan membantu meningkatkan kepercayaan pelanggan lain terhadap produk dan penjual.
+- Pemilik UMKM dapat membaca ulasan yang diberikan pelanggan dan meresponsnya jika diperlukan.
+
+#### 3.2 Fitur Promosi Diskon
+- Pemilik UMKM dapat membuat **promosi diskon** untuk produk tertentu melalui halaman **Manajemen Produk**.
+- Pelanggan dapat melihat diskon yang tersedia saat menelusuri produk dan memanfaatkannya pada saat checkout.
+- Fitur ini memberikan interaktivitas antara pengguna (pelanggan) dan pemilik UMKM dengan cara yang dinamis.
+
 ---
-title: Introduction
-description: This section provides an overview of Introduction.
+
+## Teknologi yang Digunakan
+
+- **Frontend**: React Native atau Flutter (untuk aplikasi mobile).
+- **Backend**: Node.js, Laravel.
+- **Database**: MySQL untuk menyimpan data produk, pesanan, dan pengguna.
+- **Keamanan**: Autentikasi berbasis sesi dan password hashing menggunakan PHP.
+
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
-
-| Syntax        | Description |   Test Text |
-| :------------ | :---------: | ----------: |
-| Header        |    Title    | Here's this |
-| Paragraph     |    Text     |    And more |
-| Strikethrough |             |    ~~Text~~ |
-
-## Getting Started
-
-To begin using the Documentation Template, follow these simple steps:
-
-- Start by cloning the repository to your local machine.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.
-
-## Blockquotes
-
-Blockquotes are useful for emphasizing key points or quoting external sources:
-
-> "Documentation is a love letter that you write to your future self." - Damian Conway
-
-Feel free to use blockquotes to highlight important information or quotes relevant to your documentation.
-
-## Code Examples with switch
-
-Here a custom tab component from shadcn ui is used.
-
-<Tabs defaultValue="js">
-  <TabsList>
-    <TabsTrigger value="js">layout.jsx</TabsTrigger>
-    <TabsTrigger value="ts">layout.tsx</TabsTrigger>
-  </TabsList>
-  <TabsContent value="js">
-  ```jsx {7} showLineNumbers
-import ThemeProvider from './theme-provider'
- 
-export default function RootLayout({ children }) {
-  return (
-    <html>
-      <body className="container">
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
-    </html>
-  )}
-````
-  </TabsContent>
-  <TabsContent value="ts">
-```tsx {11} showLineNumbers
-import ThemeProvider from './theme-provider'
- 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html>
-      <body className="container">
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
-    </html>
-  )
-}
-```
-  </TabsContent>
-</Tabs>
-
-## Conclusion
-
-Thank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!
-
-## Tabs Example
-
-<Tabs defaultValue="tab1">
-  <TabsList>
-    <TabsTrigger value="tab1">Tab 1</TabsTrigger>
-    <TabsTrigger value="tab2">Tab 2</TabsTrigger>
-  </TabsList>
-  <TabsContent value="tab1">
-    <p>This is content for Tab 1.</p>
-  </TabsContent>
-  <TabsContent value="tab2">
-    <p>This is content for Tab 2.</p>
-  </TabsContent>
-</Tabs>
+Dokumentasi ini mencakup penjelasan pengembangan aplikasi **UMKM Market**, fitur utama yang disediakan untuk pengguna, serta teknologi yang digunakan. Anda dapat menyalin dan menempelkan teks ini ke dalam file **MDX** untuk dokumentasi lebih lanjut.
