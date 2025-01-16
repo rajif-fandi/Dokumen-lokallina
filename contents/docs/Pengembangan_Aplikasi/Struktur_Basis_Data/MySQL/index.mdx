@@ -1,46 +1,58 @@
----
-title: Introduction
-description: This section provides an overview of Introduction.
----
+###Users
+| #   | Nama            | Jenis           | Penyortiran      | Atribut     | Tak Ternilai | Bawaan   | Komentar    | Ekstra        |
+|-----|-----------------|-----------------|------------------|-------------|--------------|----------|-------------|---------------|
+| 1   | userId          | int(30)         | Tidak            | Tidak ada   | Tidak ada    | AUTO_INCREMENT |               |
+| 2   | username        | varchar(255)    | utf8mb4_general_ci | Ya        | NULL         |           |             |               |
+| 3   | password        | varchar(255)    | utf8mb4_general_ci | Ya        | NULL         |           |             |               |
+| 4   | email           | varchar(255)    | utf8mb4_general_ci | Ya        | NULL         |           |             |               |
+| 5   | profile_picture | varchar(255)    | utf8mb4_general_ci | Ya        | default.jpg  |           |             |               |
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam
+###Products
+| #   | Nama        | Jenis           | Penyortiran      | Atribut      | Tak Ternilai | Bawaan   | Komentar    | Ekstra        |
+|-----|-------------|-----------------|------------------|--------------|--------------|----------|-------------|---------------|
+| 1   | productId   | int(11)         | Tidak            | Tidak ada    | Tidak ada    | AUTO_INCREMENT |               |
+| 2   | name        | varchar(100)    | utf8mb4_general_ci | Ya        | NULL         |           |             |               |
+| 3   | description | text            | utf8mb4_general_ci | Ya        | NULL         |           |             |               |
+| 4   | price       | double          |                  | Ya          | NULL         |           |             |               |
+| 5   | stock       | int(11)         |                  | Ya          | NULL         |           |             |               |
+| 6   | image_path  | varchar(255)    | utf8mb4_general_ci | Ya        | NULL         |           |             |               |
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+###Orders
+| #   | Nama        | Jenis           | Penyortiran      | Atribut      | Tak Ternilai | Bawaan   | Komentar    | Ekstra        |
+|-----|-------------|-----------------|------------------|--------------|--------------|----------|-------------|---------------|
+| 1   | id          | int(11)         | Tidak            | Tidak ada    | Tidak ada    | AUTO_INCREMENT |               |
+| 2   | productId   | int(11)         |                  | Ya           | NULL         |           |             |               |
+| 3   | quantity    | int(11)         |                  | Ya           | NULL         |           |             |               |
+| 4   | userId      | int(11)         |                  | Ya           | NULL         |           |             |               |
 
-| Syntax        | Description |   Test Text |
-| :------------ | :---------: | ----------: |
-| Header        |    Title    | Here's this |
-| Paragraph     |    Text     |    And more |
-| Strikethrough |             |    ~~Text~~ |
+###Orders Details
+| #   | Nama        | Jenis           | Penyortiran      | Atribut      | Tak Ternilai | Bawaan   | Komentar    | Ekstra        |
+|-----|-------------|-----------------|------------------|--------------|--------------|----------|-------------|---------------|
+| 1   | id          | int(11)         | Tidak            | Tidak ada    | Tidak ada    | AUTO_INCREMENT |               |
+| 2   | orderId     | int(11)         |                  | Tidak        | NULL         |           |             |               |
+| 3   | productId   | int(11)         |                  | Tidak        | NULL         |           |             |               |
+| 4   | quantity    | int(11)         |                  | Tidak        | NULL         |           |             |               |
+| 5   | price       | decimal(10,2)   |                  | Tidak        | NULL         |           |             |               |
 
-<CardGrid>
-  <Card
-    title="Page Structure"
-    href="/docs/deep/deeper"
-    icon="alignJustify"
-    variant="small"
-    description="test description"
-  />
-  <Card
-    title="Page Structure"
-    href="/docs/deep/deeper"
-    icon="alignJustify"
-    variant="small"
-  />
-  <Card
-    title="Rubix Studios"
-    href="https://www.rubixstudios.com.au"
-    icon="alignJustify"
-    external={true}
-    variant="small"
-  />
-  <Card
-    title="Rubix Studios"
-    href="https://www.rubixstudios.com.au"
-    image="/images/og-image.png"
-    external={true}
-    variant="image"
-  />
-</CardGrid>
+###Orders Table
+| #   | Nama            | Jenis           | Penyortiran      | Atribut        | Tak Ternilai | Bawaan           | Komentar    | Ekstra        |
+|-----|-----------------|-----------------|------------------|----------------|--------------|------------------|-------------|---------------|
+| 1   | orderId         | int(11)         | Tidak            | Tidak ada      | Tidak ada    | AUTO_INCREMENT   |             |               |
+| 2   | userId          | int(11)         |                  | Tidak          | NULL         |                  |             |               |
+| 3   | total_amount    | decimal(10,2)   |                  | Tidak          | NULL         |                  |             |               |
+| 4   | status          | enum('pending', 'paid', 'shipped', 'completed') | utf8mb4_general_ci | Ya | pending |            |             |               |
+| 5   | created_at      | timestamp       |                  | Tidak          | current_timestamp() |           |             |               |
+| 6   | payment_method  | varchar(50)     | utf8mb4_general_ci | Ya        | NULL         |                  |             |               |
+| 7   | shipping_address| text            | utf8mb4_general_ci | Ya        | NULL         |                  |             |               |
+| 8   | phone_number    | varchar(15)     | utf8mb4_general_ci | Ya        | NULL         |                  |             |               |
+
+###Payments
+| #   | Nama            | Jenis           | Penyortiran      | Atribut         | Tak Ternilai | Bawaan   | Komentar    | Ekstra        |
+|-----|-----------------|-----------------|------------------|-----------------|--------------|----------|-------------|---------------|
+| 1   | paymentId       | int(11)         | Tidak            | Tidak ada       | Tidak ada    | AUTO_INCREMENT |               |
+| 2   | orderId         | int(11)         |                  | Tidak           | NULL         |           |             |               |
+| 3   | amount          | decimal(10,2)   |                  | Tidak           | NULL         |           |             |               |
+| 4   | payment_method  | varchar(50)     | utf8mb4_general_ci | Tidak        | NULL         |           |             |               |
+| 5   | payment_status  | enum('pending', 'success', 'failed') | utf8mb4_general_ci | Ya    | pending    |           |             |               |
+| 6   | payment_date    | timestamp       |                  | Tidak           | current_timestamp() |           |             |               |
+| 7   | proof_of_payment| varchar(255)    | utf8mb4_general_ci | Ya        | NULL         |           |             |               |
