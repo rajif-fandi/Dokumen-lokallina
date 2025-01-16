@@ -132,4 +132,10 @@ export const Documents: Paths[] = [
     items: [
     ],
   },
+  {
+    title: "Kesimpulan dan Saran",
+    href: "/Kesimpulan_dan_Saran",
+    items: [
+    ],
+  },
 ];
